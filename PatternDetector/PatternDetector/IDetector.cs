@@ -8,10 +8,10 @@ using SharpDX;
 
 namespace PatternDetector
 {
-    public enum DetectorSetting { VFX01, VFX02, VFX03}
+    public enum DetectorSetting { Preferred, Safe, AntiHumanizer}
     interface IDetector
     {
-        void Initialize(Obj_AI_Hero hero, DetectorSetting setting = DetectorSetting.VFX02);
+        void Initialize(Obj_AI_Hero hero, DetectorSetting setting = DetectorSetting.Safe);
         void ApplySetting(DetectorSetting setting);
         void FeedData(Vector3 targetPos);
         int GetScriptDetections();

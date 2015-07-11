@@ -14,7 +14,7 @@ namespace PatternDetector
         private int _scripting;
         private Obj_AI_Hero _hero;
         private readonly List<DataSet> _recentData = new List<DataSet>();
-        private readonly Dictionary<DetectorSetting, float[]> _settingValues = new Dictionary<DetectorSetting, float[]> { { DetectorSetting.VFX02, new[] { 0.125f, 90 } }, { DetectorSetting.VFX03, new[] { 0.5f, 80 } } };
+        private readonly Dictionary<DetectorSetting, float[]> _settingValues = new Dictionary<DetectorSetting, float[]> { { DetectorSetting.Safe, new[] { 0.125f, 90 } }, { DetectorSetting.AntiHumanizer, new[] { 0.5f, 80 } } };
         private DetectorSetting _currentSetting;
 
 
@@ -73,7 +73,7 @@ namespace PatternDetector
             return "BoL SAC";
         }
 
-        public void Initialize(Obj_AI_Hero hero, DetectorSetting setting = DetectorSetting.VFX01)
+        public void Initialize(Obj_AI_Hero hero, DetectorSetting setting = DetectorSetting.Preferred)
         {
             _hero = hero;
             ApplySetting(setting);
@@ -81,7 +81,7 @@ namespace PatternDetector
 
         public void ApplySetting(DetectorSetting setting)
         {
-            _currentSetting = setting == DetectorSetting.VFX01 ? DetectorSetting.VFX03 : setting;
+            _currentSetting = setting == DetectorSetting.Preferred ? DetectorSetting.AntiHumanizer : setting;
         }
     }
 }

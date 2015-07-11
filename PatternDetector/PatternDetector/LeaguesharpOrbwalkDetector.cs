@@ -15,7 +15,7 @@ namespace PatternDetector
         private int _scripting;
         private Obj_AI_Hero _hero;
         private readonly List<DataSet> _recentData = new List<DataSet>();
-        private readonly Dictionary<DetectorSetting, float[]> _settingValues = new Dictionary<DetectorSetting, float[]>() { { DetectorSetting.VFX02, new[] { 0.125f, 90 } }, { DetectorSetting.VFX03, new[] { 0.25f, 80 } } };
+        private readonly Dictionary<DetectorSetting, float[]> _settingValues = new Dictionary<DetectorSetting, float[]>() { { DetectorSetting.Safe, new[] { 0.125f, 90 } }, { DetectorSetting.AntiHumanizer, new[] { 0.25f, 80 } } };
         private DetectorSetting _currentSetting;
 
         public LeaguesharpOrbwalkDetector()
@@ -96,7 +96,7 @@ namespace PatternDetector
             return "L# Common";
         }
 
-        public void Initialize(Obj_AI_Hero hero, DetectorSetting setting = DetectorSetting.VFX02)
+        public void Initialize(Obj_AI_Hero hero, DetectorSetting setting = DetectorSetting.Safe)
         {
             _hero = hero;
             ApplySetting(setting);
@@ -104,7 +104,7 @@ namespace PatternDetector
 
         public void ApplySetting(DetectorSetting setting)
         {
-            _currentSetting = setting == DetectorSetting.VFX01 ? DetectorSetting.VFX02 : setting;
+            _currentSetting = setting == DetectorSetting.Preferred ? DetectorSetting.Safe : setting;
         }
     }
 }

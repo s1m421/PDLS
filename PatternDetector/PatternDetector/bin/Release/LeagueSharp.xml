@@ -327,122 +327,122 @@ This enum defines the different states a <see cref="T:LeagueSharp.SpellDataInst"
 This structure represents a mastery entry.
 </summary>
         </member>
-        <member name="E:LeagueSharp.Drawings.OnSetRenderTarget">
+        <member name="E:LeagueSharp.Drawing.OnSetRenderTarget">
             <summary>
 SetRenderTarget Event, called before D3D9.SetRenderTarget is called
 </summary>
         </member>
-        <member name="E:LeagueSharp.Drawings.OnPresent">
+        <member name="E:LeagueSharp.Drawing.OnPresent">
             <summary>
 Present Event, called before D3D9.Present is called
 </summary>
         </member>
-        <member name="E:LeagueSharp.Drawings.OnPostReset">
+        <member name="E:LeagueSharp.Drawing.OnPostReset">
             <summary>
 PostReset Event, called after Reset is called.
 </summary>
         </member>
-        <member name="E:LeagueSharp.Drawings.OnPreReset">
+        <member name="E:LeagueSharp.Drawing.OnPreReset">
             <summary>
 PreReset Event, called before Reset is called.
 </summary>
         </member>
-        <member name="E:LeagueSharp.Drawings.OnEndScene">
+        <member name="E:LeagueSharp.Drawing.OnEndScene">
             <summary>
 EndScene Event, subscribe to this event for using DirectX rendering code
 </summary>
         </member>
-        <member name="E:LeagueSharp.Drawings.OnBeginScene">
+        <member name="E:LeagueSharp.Drawing.OnBeginScene">
             <summary>
 BeginScene Event
 </summary>
         </member>
-        <member name="P:LeagueSharp.Drawings.View">
+        <member name="P:LeagueSharp.Drawing.View">
             <summary>
 Game camera's view
 </summary>
         </member>
-        <member name="P:LeagueSharp.Drawings.Projection">
+        <member name="P:LeagueSharp.Drawing.Projection">
             <summary>
 Game camera's Projection
 </summary>
         </member>
-        <member name="P:LeagueSharp.Drawings.Direct3DDevice">
+        <member name="P:LeagueSharp.Drawing.Direct3DDevice">
             <summary>
 SharpDX DirectD3D9 Device
 </summary>
         </member>
-        <member name="P:LeagueSharp.Drawings.Height">
+        <member name="P:LeagueSharp.Drawing.Height">
             <summary>
 Screen height of the League of Legends window
 </summary>
         </member>
-        <member name="P:LeagueSharp.Drawings.Width">
+        <member name="P:LeagueSharp.Drawing.Width">
             <summary>
 Screen width of the League of Legends window
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.ScreenToWorld(SharpDX.Vector2)">
+        <member name="M:LeagueSharp.Drawing.ScreenToWorld(SharpDX.Vector2)">
             <summary>
 Converts the given screen coordinates into 3D world coordinates.
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.ScreenToWorld(System.Single,System.Single)">
+        <member name="M:LeagueSharp.Drawing.ScreenToWorld(System.Single,System.Single)">
             <summary>
 Converts the given screen coordinates into 3D world coordinates.
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.WorldToScreen(SharpDX.Vector3,SharpDX.Vector2@)">
+        <member name="M:LeagueSharp.Drawing.WorldToScreen(SharpDX.Vector3,SharpDX.Vector2@)">
             <summary>
 Converts the given 3D world coordinates into screen coordinates.
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.WorldToScreen(SharpDX.Vector3)">
+        <member name="M:LeagueSharp.Drawing.WorldToScreen(SharpDX.Vector3)">
             <summary>
 Converts the given 3D world coordinates into screen coordinates.
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.WorldToMinimap(SharpDX.Vector3)">
+        <member name="M:LeagueSharp.Drawing.WorldToMinimap(SharpDX.Vector3)">
             <summary>
 Converts the given 3D world coordinates into minimap coordinates.
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.GetTextExtent(System.String)">
+        <member name="M:LeagueSharp.Drawing.GetTextExtent(System.String)">
             <summary>
 Retrieves the text extent
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.DrawLine(SharpDX.Vector2,SharpDX.Vector2,System.Single,System.Drawings.Color)">
+        <member name="M:LeagueSharp.Drawing.DrawLine(SharpDX.Vector2,SharpDX.Vector2,System.Single,System.Drawing.Color)">
             <summary>
 Draws a line on the screen with specified thickness and color
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.DrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Drawings.Color)">
+        <member name="M:LeagueSharp.Drawing.DrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Drawing.Color)">
             <summary>
 Draws a line on the screen with specified thickness and color
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.DrawCircle(SharpDX.Vector3,System.Single,System.Drawings.Color)">
+        <member name="M:LeagueSharp.Drawing.DrawCircle(SharpDX.Vector3,System.Single,System.Drawing.Color)">
             <summary>
 Draws a circle at the given 3D position with the given radius in the specified color.
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.DrawText(System.Single,System.Single,System.Drawings.Color,System.String)">
+        <member name="M:LeagueSharp.Drawing.DrawText(System.Single,System.Single,System.Drawing.Color,System.String)">
             <summary>
 Draws Text on the Screen.
 </summary>
         </member>
-        <member name="M:LeagueSharp.Drawings.DrawText(System.Single,System.Single,System.Drawings.Color,System.String,System.Object[])">
+        <member name="M:LeagueSharp.Drawing.DrawText(System.Single,System.Single,System.Drawing.Color,System.String,System.Object[])">
             <summary>
 Draws Text on the Screen.
 </summary>
         </member>
-        <member name="E:LeagueSharp.Drawings.OnDraw">
+        <member name="E:LeagueSharp.Drawing.OnDraw">
             <summary>
-Subscribe to this event to make use of drawings functions. 
+Subscribe to this event to make use of drawing functions. 
 </summary>
         </member>
-        <member name="T:LeagueSharp.Drawings">
+        <member name="T:LeagueSharp.Drawing">
             <summary>
 This class offers everything one needs to render ontop of the League of Legends window.
 </summary>
